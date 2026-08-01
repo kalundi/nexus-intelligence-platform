@@ -1,3 +1,17 @@
+'use client';
+
+import Link from 'next/link';
+import { useState } from 'react';
+
+const navigation = [
+  { label: 'Executive Briefing', href: '/' },
+  { label: 'Observatory', href: '/observatory' },
+  { label: 'Montgomery County', href: '/atlas' },
+  { label: 'Research', href: '/research' },
+  { label: 'Investor Room', href: '/capital' },
+  { label: 'Operations', href: '/operations' },
+];
+
 const briefingCards = [
   { label: 'Care access coverage', value: '94.2%', trend: '+3.6% vs last month' },
   { label: 'Critical incidents', value: '12', trend: 'Down 22% week over week' },
@@ -11,6 +25,8 @@ const focusAreas = [
 ];
 
 export default function HomePage() {
+  const [, setSidebarOpen] = useState(false);
+
   return (
     <main className="page-shell">
       <section className="hero-card">
@@ -18,6 +34,19 @@ export default function HomePage() {
           <p className="eyebrow">Executive briefing</p>
           <span className="status-pill">Live • 08:15 UTC</span>
         </div>
+
+        <nav aria-label="Primary navigation" className="nav-list">
+          {navigation.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="nav-item"
+              onClick={() => setSidebarOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
 
         <h1>Mission readiness is improving across every care corridor.</h1>
         <p className="hero-copy">
@@ -43,6 +72,18 @@ export default function HomePage() {
             ))}
           </ul>
         </div>
+
+        <article className="platform-card">
+          <span>01</span>
+          <h3>Healthcare Access Observatory</h3>
+          <p>
+            Explore demographic, healthcare, transportation, and accessibility indicators
+            through an evidence-led decision framework.
+          </p>
+          <Link href="/observatory" className="platform-link">
+            Open Observatory →
+          </Link>
+        </article>
       </section>
     </main>
   );
