@@ -1,0 +1,9 @@
+{
+  "name": "nexus-intelligence-platform",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "node apps/web/server.js",
+    "test": "node tests/web-server.test.js"
+  }
+}
