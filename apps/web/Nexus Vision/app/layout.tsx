@@ -2,7 +2,7 @@ import { Inter, JetBrains_Mono, Libre_Baskerville } from "next/font/google"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import { AppShell } from "@/components/layout/app-shell"
+import { AppShell } from "@/components/layout/AppShell"
 import { cn } from "@/lib/utils"
 
 const fontSans = Inter({
