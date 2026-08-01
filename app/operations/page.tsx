@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { OperationsDashboard } from "../../components/operations/OperationsDashboard";
 
 const leadershipQuestions = [
@@ -24,27 +22,6 @@ const leadershipQuestions = [
 export default function OperationsPage() {
   return (
     <main className="operations-page">
-      <header className="operations-topbar">
-        <div>
-          <span>NEXUS INTELLIGENCE PLATFORM</span>
-          <h1>Operations Command Center</h1>
-        </div>
-
-        <div className="operations-topbar-actions">
-          <Link href="/" className="back-link">
-            Executive Briefing
-          </Link>
-
-          <Link href="/observatory" className="back-link">
-            Observatory
-          </Link>
-
-          <Link href="/capital" className="back-link">
-            Investor Room
-          </Link>
-        </div>
-      </header>
-
       <section className="operations-hero">
         <div>
           <span className="eyebrow">

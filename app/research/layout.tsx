@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Healthcare Access Observatory",
+  title: "Research Library",
   description:
-    "Population, healthcare, transportation, and accessibility intelligence.",
+    "Evidence, analysis, strategy, and future-vision publications.",
 };
 
-export default function ObservatoryLayout({
+export default function ResearchLayout({
   children,
 }: {
   children: React.ReactNode;

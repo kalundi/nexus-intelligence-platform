@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { DecisionRoom } from "../../components/capital/DecisionRoom";
 
 const investmentQuestions = [
@@ -32,31 +30,6 @@ const investmentQuestions = [
 export default function CapitalPage() {
   return (
     <main className="capital-page">
-      <header className="capital-topbar">
-        <div>
-          <span>NEXUS INTELLIGENCE PLATFORM</span>
-          <h1>Investor Decision Room</h1>
-        </div>
-
-        <div className="capital-topbar-actions">
-          <Link href="/" className="back-link">
-            Executive Briefing
-          </Link>
-
-          <Link href="/observatory" className="back-link">
-            Observatory
-          </Link>
-
-          <Link href="/atlas" className="back-link">
-            Atlas
-          </Link>
-
-          <Link href="/research" className="back-link">
-            Research
-          </Link>
-        </div>
-      </header>
-
       <section className="capital-hero">
         <div>
           <span className="eyebrow">

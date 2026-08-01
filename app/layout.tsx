@@ -1,9 +1,15 @@
-import type { Metadata } from 'next';
-import './globals.css';
+import type { Metadata } from "next";
+import "./globals.css";
+
+import { PlatformShell } from "../components/layout/PlatformShell";
 
 export const metadata: Metadata = {
-  title: 'Nexus Intelligence Platform',
-  description: 'A modern medical intelligence workspace foundation.',
+  title: {
+    default: "Nexus Intelligence Platform",
+    template: "%s | Nexus Intelligence",
+  },
+  description:
+    "Understanding healthcare access. Building healthcare mobility.",
 };
 
 export default function RootLayout({
@@ -13,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <PlatformShell>{children}</PlatformShell>
+      </body>
     </html>
   );
 }

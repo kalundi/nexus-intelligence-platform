@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { EvidencePanel } from "../../components/observatory/EvidencePanel";
 import { KpiCard } from "../../components/observatory/KpiCard";
 import { PopulationChart } from "../../components/observatory/PopulationChart";
@@ -8,17 +6,6 @@ import { observatoryMetrics } from "../../data/healthcareMetrics";
 export default function ObservatoryPage() {
   return (
     <main className="observatory-page">
-      <header className="observatory-topbar">
-        <div>
-          <span>NEXUS INTELLIGENCE PLATFORM</span>
-          <h1>Healthcare Access Observatory</h1>
-        </div>
-
-        <Link href="/" className="back-link">
-          ← Executive Briefing
-        </Link>
-      </header>
-
       <section className="observatory-hero">
         <div>
           <span className="eyebrow">MONTGOMERY COUNTY — BETA</span>

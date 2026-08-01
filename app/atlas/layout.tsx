@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Healthcare Access Observatory",
+  title: "Montgomery Atlas",
   description:
-    "Population, healthcare, transportation, and accessibility intelligence.",
+    "Facility and corridor intelligence for healthcare mobility planning.",
 };
 
-export default function ObservatoryLayout({
+export default function AtlasLayout({
   children,
 }: {
   children: React.ReactNode;

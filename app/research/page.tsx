@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { ResearchLibrary } from "../../components/research/ResearchLibrary";
 import { researchPublications } from "../../data/research";
 
@@ -36,27 +34,6 @@ const publicationMetrics = [
 export default function ResearchPage() {
   return (
     <main className="research-page">
-      <header className="research-topbar">
-        <div>
-          <span>NEXUS INTELLIGENCE PLATFORM</span>
-          <h1>Research Library</h1>
-        </div>
-
-        <div className="research-topbar-actions">
-          <Link href="/" className="back-link">
-            Executive Briefing
-          </Link>
-
-          <Link href="/observatory" className="back-link">
-            Observatory
-          </Link>
-
-          <Link href="/atlas" className="back-link">
-            Atlas
-          </Link>
-        </div>
-      </header>
-
       <section className="research-hero">
         <div>
           <span className="eyebrow">
