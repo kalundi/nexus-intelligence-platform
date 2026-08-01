@@ -3,8 +3,8 @@
 import Link from "next/link"
 import { BarChart3, Compass, FlaskConical, LayoutGrid, Map, Telescope, X } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
+import { Button } from "../ui/button"
+import { cn } from "../../lib/utils"
 
 type NavItem = {
   label: string

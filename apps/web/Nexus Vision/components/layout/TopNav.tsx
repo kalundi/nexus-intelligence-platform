@@ -3,7 +3,7 @@
 import { Bell, Menu, Moon, Search, Sun, UserCircle2 } from "lucide-react"
 import { useTheme } from "next-themes"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "../ui/button"
 
 type TopNavProps = {
   onOpenSidebar: () => void

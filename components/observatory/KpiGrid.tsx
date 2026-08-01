@@ -1,11 +1,11 @@
 import { KpiCard } from './KpiCard';
-import type { KpiMetric } from '../../types/observatory';
+import type { ObservatoryMetric } from '../../types/observatory';
 
-export function KpiGrid({ metrics }: { metrics: KpiMetric[] }) {
+export function KpiGrid({ metrics }: { metrics: ObservatoryMetric[] }) {
   return (
     <section className="kpi-grid">
       {metrics.map((metric) => (
-        <KpiCard key={metric.label} metric={metric} />
+        <KpiCard key={metric.id} metric={metric} />
       ))}
     </section>
   );

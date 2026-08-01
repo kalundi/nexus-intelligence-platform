@@ -1,6 +1,6 @@
 import { Activity, ArrowUpRight, Circle, Sparkles, TrendingUp } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "../components/ui/button"
 
 const cards = [
   { title: "Active routes", value: "124", detail: "+8% vs last week" },

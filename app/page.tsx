@@ -80,8 +80,8 @@ export default function HomePage() {
             Explore demographic, healthcare, transportation, and accessibility indicators
             through an evidence-led decision framework.
           </p>
-          <Link href="/observatory" className="platform-link">
-            Open Observatory →
+          <Link href="/research" className="platform-link">
+            Open Research Library →
           </Link>
         </article>
       </section>

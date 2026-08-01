@@ -3,10 +3,10 @@
 import { useState } from "react"
 import { Search, X } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
-import { PageContainer } from "@/components/layout/PageContainer"
-import { Sidebar } from "@/components/layout/Sidebar"
-import { TopNav } from "@/components/layout/TopNav"
+import { Button } from "../ui/button"
+import { PageContainer } from "./PageContainer"
+import { Sidebar } from "./Sidebar"
+import { TopNav } from "./TopNav"
 
 type AppShellProps = {
   children: React.ReactNode
