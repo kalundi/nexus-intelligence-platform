@@ -62,6 +62,10 @@ export function PlatformShell({
 
   return (
     <div className="platform-shell">
+      <a href="#platform-content" className="skip-link">
+        Skip to main content
+      </a>
+
       <aside
         className={
           mobileOpen
@@ -144,7 +148,9 @@ export function PlatformShell({
           </div>
         </header>
 
-        <div className="platform-content">{children}</div>
+        <div id="platform-content" className="platform-content" tabIndex={-1}>
+          {children}
+        </div>
       </section>
 
       {mobileOpen ? (
